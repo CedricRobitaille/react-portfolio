@@ -1,12 +1,14 @@
 import Nav from "./components/nav/Nav.jsx"
+import Profile from "./components/profile/Profile.jsx"
+import Skills from "./components/skills/Skills.jsx"
 
 
 const dataSet = {
   logo: "./images/logo.svg",
   author: {
-    name: "Cedric",
-    description: "Making HOLY SH*T Web Solutions for Bold and Daring Clients",
-    pfp: "./assets/pfp.jpg",
+    name: "Cedric Robitaille",
+    description: "I Make HOLY SH*T Web Solutions for Bold and Daring Clients!",
+    pfp: "./images/pfp.jpg",
   },
   navLinks: [
     { text: "Portfolio", link: "https://cedricrobitaille.ca" },
@@ -80,7 +82,11 @@ const dataSet = {
       name: "Flogrid",
       link: "Created a Kanban-board styled Project Management System using the MEN Stack, featuring user authentication and a full CRUD featureset, giving users the power to manage tasks as they need.",
     },
-  ]
+  ],
+  addLinks: {
+    calendly: { text: "Let's Connect", link: "https://calendly.com/contact-cedricrobitaille/30min", icon: "./icons/message-circle.svg"
+    }
+  }
 }
 
 
@@ -88,15 +94,19 @@ const App = () => {
   const docStyle = {
     display: "flex",
     flexDirection: "column",
-    gap: "1rem"
+    gap: "4rem",
+    backgroundColor: "#fbfeffff"
   }
 
   const navItems = { logo: dataSet.logo, links: dataSet.navLinks }
+  const headerItems = { author: dataSet.author, cta: dataSet.addLinks.calendly, scndLink: dataSet.navLinks[0]}
 
   return (
-    <div>
+    <main style={docStyle}>
       <Nav items={navItems} />
-    </div>
+      <Profile items={headerItems} />
+      <Skills items={dataSet.mySkills} />
+    </main>
   )
 }
 

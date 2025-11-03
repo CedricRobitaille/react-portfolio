@@ -12,7 +12,7 @@ const NavList = ({ links }) => {
   }
 
   const navLink = {
-    color: "#f1f1f1",
+    color: "#333333ff",
     textDecoration: "none",
     fontSize: "1.125rem"
   }

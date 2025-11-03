@@ -2,6 +2,10 @@ const Logo = ({ file }) => {
 
   const navLogo = {
     height: "2rem",
+    padding: ".75rem",
+    backgroundColor: "#333",
+    borderRadius: "8px",
+    transform: "rotate(-2deg)"
   }
 
 
