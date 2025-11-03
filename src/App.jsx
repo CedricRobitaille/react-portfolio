@@ -50,22 +50,22 @@ const dataSet = {
           example: "#",
         },
         {
-          name: "Adobe Illustrator",
+          name: "Illustrator",
           comfort: "10",
           example: "#",
         },
         {
-          name: "Adobe Photoshop",
+          name: "Photoshop",
           comfort: "9",
           example: "#",
         },
         {
-          name: "Adobe InDesign",
+          name: "InDesign",
           comfort: "11",
           example: "#",
         },
         {
-          name: "Adobe After Effects",
+          name: "After Effects",
           comfort: "9",
           example: "#",
         },
