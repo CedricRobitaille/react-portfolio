@@ -5,11 +5,11 @@ import NavList from "./nav-list/NavList.jsx";
 const Nav = ({ items }) => {
 
   const navBarStyle = {
-    backgroundColor: "#f1f1f1",
+    backgroundColor: "#1d1d1f",
     display: "grid",
+    alignItems: "center",
     gridTemplateColumns: "1fr auto",
     padding: ".75rem 2rem .75rem"
-
   }
 
 

@@ -1,6 +1,15 @@
 const Logo = ({ file }) => {
+
+  const navLogo = {
+    height: "2rem",
+  }
+
+
   return (
-    <img src={file} alt="branded Logo" />
+    <a href="#">
+      <img style={navLogo} src={file} alt="Nav Logo" />
+    </a>
+    
   );
 }
 

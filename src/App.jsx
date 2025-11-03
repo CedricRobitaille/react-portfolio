@@ -2,7 +2,7 @@ import Nav from "./components/nav/Nav.jsx"
 
 
 const dataSet = {
-  logo: "./assets/logo.svg",
+  logo: "./images/logo.svg",
   author: {
     name: "Cedric",
     description: "Making HOLY SH*T Web Solutions for Bold and Daring Clients",
@@ -85,7 +85,14 @@ const dataSet = {
 
 
 const App = () => {
+  const docStyle = {
+    display: "flex",
+    flexDirection: "column",
+    gap: "1rem"
+  }
+
   const navItems = { logo: dataSet.logo, links: dataSet.navLinks }
+
   return (
     <div>
       <Nav items={navItems} />
