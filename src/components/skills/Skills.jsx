@@ -1,7 +1,7 @@
 import Header from "./header/Header.jsx";
 import SkillCollection from "./skill/SkillCollection.jsx";
 
-const Skills = ({ items }) => {
+const Skills = ({ skills }) => {
 
   const skillStyle = {
     maxWidth: "92rem",
@@ -22,7 +22,7 @@ const Skills = ({ items }) => {
 
   return (
     <section style={skillStyle}>
-      {items.map((item, index) => (
+      {skills.map((item, index) => (
         <article key={index} style={collectionStyle}>
           <Header title={item.category} />
           <SkillCollection skills={item.skills} />

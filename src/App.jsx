@@ -1,6 +1,7 @@
 import Nav from "./components/nav/Nav.jsx"
 import Profile from "./components/profile/Profile.jsx"
 import Skills from "./components/skills/Skills.jsx"
+import Projects from "./components/projects/Projects.jsx"
 
 
 const dataSet = {
@@ -80,7 +81,8 @@ const dataSet = {
     },
     {
       name: "Flogrid",
-      link: "Created a Kanban-board styled Project Management System using the MEN Stack, featuring user authentication and a full CRUD featureset, giving users the power to manage tasks as they need.",
+      link: "http://18.221.96.129:3001/",
+      overview: "Created a Kanban-board styled Project Management System using the MEN Stack, featuring user authentication and a full CRUD featureset, giving users the power to manage tasks as they need.",
     },
   ],
   addLinks: {
@@ -95,7 +97,8 @@ const App = () => {
     display: "flex",
     flexDirection: "column",
     gap: "4rem",
-    backgroundColor: "#fbfeffff"
+    backgroundColor: "#fbfeffff",
+    marginBottom: "2rem",
   }
 
   const navItems = { logo: dataSet.logo, links: dataSet.navLinks }
@@ -105,7 +108,8 @@ const App = () => {
     <main style={docStyle}>
       <Nav items={navItems} />
       <Profile items={headerItems} />
-      <Skills items={dataSet.mySkills} />
+      <Skills skills={dataSet.mySkills} />
+      <Projects projects={dataSet.projects}/>
     </main>
   )
 }
